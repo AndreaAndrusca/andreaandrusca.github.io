@@ -301,7 +301,7 @@ footer{
     }
     .WelcomeMessage{
         width: 70%;
-        transform: translate(-50%, -60%);
+        transform: translate(-50%, -34%);
     }
     #FirstMessage{
         font-size: 20px;
