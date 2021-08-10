@@ -348,8 +348,8 @@ function IncreaseQuantity(Name){
     
     cartItems[Name].inCart = cartItems[Name].inCart + 1;
     localStorage.setItem("productsInCart", JSON.stringify(cartItems));
-    localStorage.setItem("TotalCost", TotalCost + cartItems[Name].price);
-    localStorage.setItem("cartNumbers", ProductNumbers + 1);
+    localStorage.setItem("TotalCost", (parseInt(TotalCost) + parseInt(cartItems[Name].price)));
+    localStorage.setItem("cartNumbers", (parseInt(ProductNumbers) + 1));
     location.reload();
 }
 
