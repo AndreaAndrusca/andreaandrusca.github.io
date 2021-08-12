@@ -187,10 +187,10 @@ input{
 #Product1{
     grid-area: Product1;
 }
-#Product2{
+/*#Product2{
     grid-area: Product2;
     background-color: #F2E2FE;
-}
+}*/
 #Product3{
     grid-area: Product3;
 }

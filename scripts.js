@@ -3,8 +3,9 @@ const Details = document.getElementById("Payment");
 const Paymet = document.getElementById("Payment");
 var ProductsList = new Array ();
 var cartItems = [];
-ProductsList = [
 
+
+ProductsList = [
     {
         name: 'Hand Made Earring',
         tag: "HandMadeEarring",
@@ -24,6 +25,12 @@ ProductsList = [
     }
 
 ]
+
+
+
+
+
+
 
 
 
@@ -352,6 +359,8 @@ function IncreaseQuantity(Name){
     localStorage.setItem("cartNumbers", (parseInt(ProductNumbers) + 1));
     location.reload();
 }
+
+
 
 onLoadCartNumbers(); 
 

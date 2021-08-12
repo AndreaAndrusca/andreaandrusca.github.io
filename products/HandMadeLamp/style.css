@@ -70,150 +70,139 @@ header{
     transition: 0.4s;
     transform: translateY(5px);
 }
-#Home{
-    color: #7117B8;
-}
 
 
 
 
-/*CHECKOUT*/
-.Checkout{
+
+/*PRODUCT*/
+
+.Product{
     display: grid;
     grid-template-areas: 
-    "MyCart Payment";
-    grid-template-columns: 1fr 1fr;
-    width: 80%;
-    margin-top: 8rem;
-    margin-bottom: 6rem;
+    "Image Details"
+    "Info Info";
+    grid-template-columns: 1fr 2fr;
+    width: 70%;
+    margin-top: 5rem;
 }
-.Checkout hr{
-    border: solid 1px black;
-    margin: 2rem 0;
-}
-.MyCart{
-    grid-area: MyCart;
-    margin-right: 6rem;
-}
-.Products{
-    display: grid;
-    grid-template-rows: auto;
-}
-.Product1{
-    display: grid;
-    grid-template-areas: 
-    "Image Details";
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-.Product1Deatails{
+.ProductDetails{
+    margin-left: 2rem;
     grid-area: Details;
 }
-.Product1Text{
-    font-size: 30px;
+.ProductImage{
+    margin: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 0;
+    border: solid black 1px;
+    grid-area: Image;
 }
-.Product1Price{
-    margin-top: 1rem;
+.ProductTitle h5{
+    font-size: 40px;
+    margin:0;
+    font-family: Caudex;
+    margin-bottom: 1.5rem;
+}
+.ProductPrice{
     font-size: 20px;
-    font-family: Caudex;
+    margin-bottom: 1.5rem;
 }
-.Product1Color{
-    margin-top: 1rem;
+.ProductColors{
+    font-family: Cadex;
     color: #6A6868;
+    margin-bottom: 1.5rem;
 }
-.Product1Quantity{
-    font-family: Caudex;
-    margin-top: 2rem;
-    color: #6A6868;
+.Colors{
     display: flex;
 }
-.Quantity{
-    display: block;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-right: 1rem;
-
-}
-.Product1Quantity input{
+.Color{
     margin-top: 0.5rem;
-    margin-left: 1rem;
+    width: 20px;
+    height: 20px;
+    border: solid black 1px;
+    border-radius: 100%;
+    margin-right: 0.2rem;
+}
+#Red{
+    background-color: red;
+}
+#Red:hover{
+    filter: opacity(0.5);
+}
+#Yellow{
+    background-color: #DDFF0C;
+}
+#Yelllow:hover{
+    filter: opacity(0.5);
+}
+#Blue{
+    background-color: #00F4E6;
+}
+#Blue:hover{
+    filter: opacity(0.5);
+}
+.ProductQuantity{
+    font-family: Caudex;
+    color: #6A6868;
+}
+.ProductQuantity input{
+    margin-top: 0.5rem;
+    margin-left: 0.3rem;
     width: 50px;
     height: 40px;
     text-align: center;
     font-size: 20px;
 }
-.MyCart img{
-    border: solid black 1px;
-    grid-area: Image;
-    width: 100px;
-    padding: 4rem 2rem;
+.ProductPay{
+    margin-top: 1.5rem;
 }
-.MyCartText{
-    font-size: 50px;   
+.ProductButton{
+    margin-bottom: 0.5rem;
+    width: 400px;
+    border: none;
+    padding: 0.6rem;
     font-family: Caudex;
-    color:#7117B8; 
+    font-size: 15px;
 }
-.Payment{
-    grid-area: Payment;
-    margin-left: 6rem;
+#Cart{
+    background-color: #CFA5F0;
+    transition: 0.4s;
 }
-.PaymentText{
+#Cart:hover{
+    filter: opacity(0.8);
+    transition: 0.4s;
+}
+#Buy{
+    background-color: #7117B8;
+    color:white;
+    transition: 0.4s;
+}
+#Buy:hover{
+    filter: opacity(0.8);
+    transition: 0.4s;
+}
+.ProductInfo{
+    grid-area: Info;
+    font-family: Caudex;
     font-size: 50px;
-    font-family: Caudex;
-    color:#7117B8; 
+    margin-top: 6rem;
+    text-align: center;
+    margin-bottom: 3rem;
 }
-.Subtotal{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2rem;
+.ProductInfo hr{
+    width: 20%;
+    border: solid #7117B8 1px;
 }
-.Subtotal div{
-    font-size: 30px;
-    font-family: Caudex;
-}
-.Shipping{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-    margin-top: 7.2rem;
-}
-.Shipping div{
-    font-size: 30px;
-    font-family: Caudex;
-}
-.Total{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-}
-.Total div{
-    font-size: 30px;
-    font-family: Caudex;
-}
-.fa-plus{
-    padding: 0.07rem 2rem 0 2rem;
-}
-.Remove{
-    margin-top: 2rem;
-}
-.Remove:hover{
-    color:#7117B8;
-    cursor: pointer;
-}
-.fa-plus{
-    transition: 0.3s;
-}
-.fa-plus:hover{
-    transition: 0.3s;
+.ProductInfo p{
     font-size: 20px;
+    text-align: justify;
+    padding-top: 1rem;
+    width: 80%;
 }
-.fa-minus{
-    transition: 0.3s;
-}
-.fa-minus:hover{
-    transition: 0.3s;
-    font-size: 20px;
-}
+
+
 
 
 /*FOOTER*/
@@ -289,32 +278,8 @@ footer{
         width: 90%;
     }
 
+    
 
-    
-    /*CHECKOUT*/
-    .Checkout{
-        width: 95%;
-        grid-template-areas: 
-        "MyCart MyCart"
-        "Payment Payment";
-    }
-    .MyCart{
-        margin-right: 0;
-    }
-    .Product1Text{
-        font-size: 20px;
-    }
-    .Payment{
-        margin-left: 0;
-    }
-    .PaymentText{
-        font-size: 40px;
-        margin-top: 7rem;
-    }
-    .MyCartText{
-        font-size: 40px;
-    }
-    
 
 
     /*COPYRIGHT*/
@@ -344,32 +309,51 @@ footer{
         width: 14%;
     }
 
+
+   /*PRODUCT*/
+   .Product{
+       grid-template-areas: 
+       "Image"
+       "Details"
+       "Info";
+       width: 90%;
+   }
+   .ProductImage{
+       padding: 2rem 0;
+       width: 300px;
+   }
+   .ProductDetails{
+       margin-left: 0.8rem;
+   }
+   .ProductTitle h5{
+       font-size: 30px;
+       margin-top: 2rem;
+   }
+   .ProductButton{
+       width: 300px;
+   }
+   .ProductInfo hr{
+       width: 60%;
+   }
+   .ProductInfo p{
+       width: 95%;
+   }
+
 }
 
 
 
 @media (max-width:1000px) and (min-width:500px){
 
-    .Checkout{
-        width: 95%;
-    }
-    .MyCartText{
-        font-size: 40px;
-    }
-    .PaymentText{
-        font-size: 40px;
-    }
-    .MyCart{
-        margin-right: 2rem;
-    }
-    .Payment{
-        margin-left: 2rem;
-    }
+    
+
 }
 
 
 @media (max-width:1500px) and (min-width:1000px){
-    .Checkout{
-        width: 90%;
-    }
+    
+   .Product{
+       width: 80%;
+   }
+
 }
