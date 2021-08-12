@@ -1,6 +1,7 @@
 const Products = document.getElementById("Products");
 const Details = document.getElementById("Payment");
 const Paymet = document.getElementById("Payment");
+const Quantity = document.getElementById("quantity");
 var ProductsList = new Array ();
 var cartItems = [];
 
@@ -12,7 +13,7 @@ ProductsList = [
         price: 20,
         inCart: 0,
         color: "Yellow",
-        quantity: parseInt(document.getElementById("InputQuantity").value)
+        quantity: Quantity.value
     },
 
     {
@@ -21,7 +22,7 @@ ProductsList = [
         price: 15,
         inCart:0,
         color:"Yellow",
-        quantity: parseInt(document.getElementById("InputQuantity").value)
+        quantity: Quantity.value
     }
 
 ]
@@ -110,9 +111,9 @@ function cartNumbers(Product){
     ProdtuctNumbers = parseInt(ProdtuctNumbers);
 
 if (ProdtuctNumbers){
-
-    localStorage.setItem("cartNumbers", ProdtuctNumbers+1 * FinalProduct.quantity);
-    document.querySelector(".CartNumber").textContent = ProdtuctNumbers + 1 * FinalProduct.quantity;
+    console.log(Quantity.value);
+    localStorage.setItem("cartNumbers", ProdtuctNumbers+1 * Quantity.value);
+    document.querySelector(".CartNumber").textContent = ProdtuctNumbers + 1 * Quantity.value;
 
 }
 else{

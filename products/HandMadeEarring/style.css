@@ -201,7 +201,13 @@ header{
     padding-top: 1rem;
     width: 80%;
 }
-
+.a-native-dropdown{
+    font-size: 20px;
+    font-family: Caudex;
+}
+#quantity{
+    font-size: 20px;
+}
 
 
 
