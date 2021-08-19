@@ -1,1 +1,0 @@
-exports.TC = 3;
