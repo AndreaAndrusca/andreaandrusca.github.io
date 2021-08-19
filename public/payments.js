@@ -1,4 +1,4 @@
-const host = "http://localhost:5000";
+const host = "https://andreeaandrusca.herokuapp.com/";
 const startCheckout = document.getElementById("Buy");
 
 const stripe = Stripe('pk_test_51JOkBLKMsNJKLnxN4NIh07zLyLrzXzAPCUlx6GOXvnMGODEfVgsvs44ZyG85Ox4U8MuR1JZU1NTbrZHbnDYrgyHo00nvCvsoDI');
