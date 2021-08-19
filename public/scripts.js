@@ -87,6 +87,7 @@ function ShowProducts(){
     <div class="Total">
         <div>Total</div>
         <div>$${parseInt(localStorage.getItem("TotalCost")) + 5 }.00</div>
+        
     </div>
     `
     }

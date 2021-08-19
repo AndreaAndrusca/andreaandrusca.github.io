@@ -78,6 +78,24 @@ header{
 
 
 /*CHECKOUT*/
+.ProductButton{
+    margin-bottom: 0.5rem;
+    width: 400px;
+    border: none;
+    padding: 0.6rem;
+    font-family: Caudex;
+    font-size: 15px;
+}
+#Buy{
+    background-color: #8f32d6;
+    color:white;
+    transition: 0.4s;
+    margin-bottom: 3rem;
+}
+#Buy:hover{
+    filter: opacity(0.8);
+    transition: 0.4s;
+}
 .Checkout{
     display: grid;
     grid-template-areas: 
@@ -85,7 +103,7 @@ header{
     grid-template-columns: 1fr 1fr;
     width: 80%;
     margin-top: 8rem;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
 }
 .Checkout hr{
     border: solid 1px black;

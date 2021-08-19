@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <!--FONTS-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Success!</title>
     <link href="https://fonts.googleapis.com/css2?family=Caudex&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://use.fontawesome.com/902264e2a2.js"></script>
-    <script src="https://js.stripe.com/v3/"></script>
-</head>
-
-<body onload="ShowProducts() ; onLoadCartNumbers()">
-    <link rel="stylesheet" href="/CheckoutStyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
-
+</head>
+<body>
+    <link rel="stylesheet" href="/SuccessStyle.css">
 
     <header>
         <h5 class="HeaderTitle" id="Andreea">Andreea Andrusca</h5>
@@ -28,7 +21,7 @@
     </header>
 
     <section class="NavBar">
-        <a href="/"><div>Home</div></a>
+        <a href="/"><div id="Home">Home</div></a>
         <a href="/shop"><div id="Shop">Shop</div></a>
         <a href="/about"><div id="About">About</div></a>
         <div id="/FAQ">FAQ</div>
@@ -40,26 +33,12 @@
     </section>
     <hr>
 
-    
-    <section class="Checkout Centered">
-        <div class="MyCart ">
-            <div class="MyCartText">My Cart</div>
-            <hr>
-                <div class="Products" id="Products">
-
-                    
-                    
-                </div>
-            <hr>
-        </div>
-
-        <div class="Payment" id="Payment">
-
-        </div>
+    <section class="Success Centered">
+        <img src="/images/oktick.png" class="Ok">
+        <h1>Thank you for your purchase!</h1>
+        <h2>An Email with all the details will be sent to you</h2>
     </section>
-    <button class="ProductButton Centered" id="Buy" onclick="payment()">Buy now</button>
 
-  
 
     <footer>
         <div class="Copyright">
@@ -89,10 +68,7 @@
         </div>
 
     </footer>
-
     <script src="/scripts.js" async></script>
-    <script src="/payments.js"></script>
- 
+    <script src="/getSession.js" async></script>
 </body>
-
 </html>
