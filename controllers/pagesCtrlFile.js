@@ -65,6 +65,10 @@ exports.finishOrder = async (req,res) =>{
     })
 }
 
+exports.faqCtrlFunction = (req, res) =>{
+    res.render("faq");
+}
+
 exports.paymentsCtrlFunction = async (req,res) =>{
     
 

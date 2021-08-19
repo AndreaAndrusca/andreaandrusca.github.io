@@ -1,10 +1,10 @@
 const express = require('express');
 const path = require('path');
-
+const dotenv = require("dotenv");
 
 const app = express();
 
-
+dotenv.config({ path: "./.env" });
 const publicDirectory = path.join(__dirname, './public');
 app.use(express.static(publicDirectory));
 
