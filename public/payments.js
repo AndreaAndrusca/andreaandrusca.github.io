@@ -1,4 +1,4 @@
-const host = "https://andreeaandrusca.herokuapp.com/";
+const host = "https://andreeaandrusca.herokuapp.com";
 const startCheckout = document.getElementById("Buy");
 
 const stripe = Stripe('pk_test_51JOkBLKMsNJKLnxN4NIh07zLyLrzXzAPCUlx6GOXvnMGODEfVgsvs44ZyG85Ox4U8MuR1JZU1NTbrZHbnDYrgyHo00nvCvsoDI');
@@ -32,7 +32,7 @@ async function buyProducts(cartProducts){
             products: cartProducts
         })
 
-        const response = await axios.post('https://andreeaandrusca.herokuapp.com/', body, {
+        const response = await axios.post('https://andreeaandrusca.herokuapp.com', body, {
             headers: {
                 Accept: "application/json",
                 "Content-Type": "application/json"
