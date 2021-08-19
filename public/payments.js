@@ -32,7 +32,7 @@ async function buyProducts(cartProducts){
             products: cartProducts
         })
 
-        const response = await axios.post('https://andreeaandrusca.herokuapp.com/checkout', body, {
+        const response = await axios.post('https://andreeaandrusca.herokuapp.com/checkouts', body, {
             headers: {
                 Accept: "application/json",
                 "Content-Type": "application/json"
